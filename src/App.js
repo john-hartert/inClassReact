@@ -31,6 +31,9 @@ export default App;
 // // Main stuff you care about is in the src folder.
 // Always need to import React at the top.
 // All code should be living in the source directory.
+// Import is another way of saying require with Node.
+// ONE COMPONENT PER FILE!!!!! Create new folders for new components.
+// Better to use functional components than class components when starting out.
 
 
 // Example:
