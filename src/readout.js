@@ -1,4 +1,5 @@
-const formatUnits = units => units.toUpperCase;
+import React, { Component } from 'react';
+const formatUnits = units => units.toUpperCase();
 
 const Readout = ({temperature, unit}) => (
     <div>

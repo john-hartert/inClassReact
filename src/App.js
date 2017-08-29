@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Readout from './readout.js';
+
 class App extends Component {
   render() {
     return (
@@ -11,7 +13,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <Readout temperature={1000000} unit="f" />
         </p>
       </div>
     );
@@ -25,8 +27,8 @@ export default App;
 // Then code squirrel-squirrel.
 // Extends component brings react into the squirrel class. For one class extend one thing,
 // since it's a react component that one class is Component.
-// Main stuff you care about is in the src folder.
-
+// // Main stuff you care about is in the src folder.
+// Always need to import React at the top.
 
 
 // Example:
