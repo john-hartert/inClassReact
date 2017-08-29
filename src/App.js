@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Need to import your other JS files.
 import Readout from './readout.js';
 
 class App extends Component {
@@ -29,6 +30,7 @@ export default App;
 // since it's a react component that one class is Component.
 // // Main stuff you care about is in the src folder.
 // Always need to import React at the top.
+// All code should be living in the source directory.
 
 
 // Example:
