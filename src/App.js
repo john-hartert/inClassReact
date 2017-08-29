@@ -6,6 +6,10 @@ import './App.css';
 import Readout from './readout.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.theNumber = 999;
+  }
   render() {
     return (
       <div className="App">
@@ -14,7 +18,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <p className="App-intro">
-          <Readout temperature={1000000} unit="f" />
+          <Readout temperature={this.theNumber} unit="f" />
         </p>
       </div>
     );
@@ -34,6 +38,8 @@ export default App;
 // Import is another way of saying require with Node.
 // ONE COMPONENT PER FILE!!!!! Create new folders for new components.
 // Better to use functional components than class components when starting out.
+// Click a button and generate a number that squares itself. The app stores the number,
+// so 
 
 
 // Example:
