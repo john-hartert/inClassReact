@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class Squirrel extends Component {
   render() {
     return (
       <div className="App">
@@ -23,3 +23,5 @@ export default App;
 // For templating use npm install -g create-react-app node module.
 // Then create-react-app squirrel-squirrel.
 // Then code squirrel-squirrel.
+// Extends component brings react into the squirrel class. For one class extend one thing,
+// since it's a react component that one class is Component.
