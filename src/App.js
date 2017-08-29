@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class Squirrel extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
@@ -25,3 +25,17 @@ export default App;
 // Then code squirrel-squirrel.
 // Extends component brings react into the squirrel class. For one class extend one thing,
 // since it's a react component that one class is Component.
+// Main stuff you care about is in the src folder.
+
+
+
+// Example:
+// Function Cat(){}
+// Function Oakley(){}
+// Oakley.prototype = new Cat();
+
+// Same as:
+// class Cat {}
+
+// class Oakley extends Cat{}
+// export default Squirrel;
