@@ -4,7 +4,7 @@ import './App.css';
 
 // Need to import your other JS files.
 import Readout from './readout.js';
-import magicbutton from './magicbutton.js';
+import Magicbutton from './magicbutton.js';
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class App extends Component {
         {/* <p className="App-intro"> */}
           <Readout unit="f" temperature={this.state.theNumber} />
         {/* </p> */}
-        <magicbutton 
+        <Magicbutton 
         title="Press here for fun" 
         handleClick={this._changeNumber}
         />

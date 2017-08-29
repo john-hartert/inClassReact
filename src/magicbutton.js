@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-const magicbutton = ({
+const Magicbutton = ({
     title,
     handleClick
 }) => (
-    <button onclick={handleClick}>{title}</button>
+    <button onClick={handleClick}>{title}</button>
 );
 
 // const logIt = (e) => {
@@ -12,4 +12,4 @@ const magicbutton = ({
 //     console.log('The button got pressed');
 // };
 
-export default magicbutton;
+export default Magicbutton;
