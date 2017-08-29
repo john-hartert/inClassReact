@@ -19,3 +19,7 @@ class App extends Component {
 }
 
 export default App;
+
+// For templating use npm install -g create-react-app node module.
+// Then create-react-app squirrel-squirrel.
+// Then code squirrel-squirrel.
