@@ -9,8 +9,10 @@ import magicbutton from './magicbutton.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.theNumber = 999;
-  }
+    this.state = {
+      theNumber: 999
+      };
+    }
   render() {
     return (
       <div className="App">
@@ -18,12 +20,23 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          <Readout temperature={this.theNumber} unit="f" />
-        </p>
-        <magicbutton title="Press here for fun" />
+        {/* <p className="App-intro"> */}
+          <Readout unit="f" temperature={this.state.theNumber} />
+        {/* </p> */}
+        <magicbutton 
+        title="Press here for fun" 
+        handleClick={this._changeNumber}
+        />
       </div>
     );
+  }
+  _changeNumber = () => {
+    console.log('I\'m having the time of me life');
+    // this.theNumber=this.theNumber * this.theNumber;
+    const newNumber = this.state.theNumber * this.state.theNumber;
+    this.setState({
+      theNumber: newNumber
+    });
   }
 }
 
